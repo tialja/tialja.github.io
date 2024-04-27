@@ -17,6 +17,14 @@
 </head>
 <body>
   <canvas id="canvas"></canvas>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+    }
+  }
+</script>
   <script src="https://threejs.org/docs/"></script>
   <script>
     // Funktion zum Initialisieren der 3D-Szene
@@ -64,5 +72,6 @@
     // Initialisierung der 3D-Szene beim Laden der Seite
     window.onload = init;
   </script>
+
 </body>
 </html>
